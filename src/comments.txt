@@ -1,0 +1,48 @@
+/*
+	//class variables
+	//static String publisher = "TMH";
+	static int count = 0;
+
+	//class methods
+	//static void setEdition(){}
+
+	//private static int count = 0;
+
+	//instance variables
+	protected String title; //= null;
+	protected long ISBN; //= 0;
+	protected String author; //= null;
+
+	public Book(){
+		System.out.println("Yes its a latest Book class");
+	}
+
+	//private, protected, public, default - scope - visibility - access specifiers
+	//factory design pattern
+	private Book(String title, long ISBN,String author){
+	//public Book(String title, long ISBN,String author){
+		this.title = title;
+		this.ISBN = ISBN;
+		this.author = author;
+	}
+
+	//Factory method, Singleton
+	static public Book getInstance(String title,long ISBN, String author){
+		if(count==1)
+			return null;
+		else {
+			count++;
+			return new Book(title,ISBN,author);
+		}
+	}
+	
+
+	//instance method
+	public void display(){
+		System.out.println("Title:" + this.title);
+		System.out.println("ISBN:" + this.ISBN);
+		System.out.println("Author:" + this.author);
+	}
+}
+
+*/
